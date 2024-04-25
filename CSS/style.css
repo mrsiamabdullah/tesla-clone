@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@layer components {
+  .side-nav {
+    @apply bg-white transition-all duration-700 fixed top-0 right-[-100%] w-1/2 md:w-1/6 h-screen z-30 p-10 shadow-2xl font-semibold;
+  }
+
+  .nav-items {
+    @apply text-2xl font-medium text-slate-900 py-2 px-5 rounded-[1.2rem] md:bg-transparent duration-500 bg-opacity-40 hover:bg-slate-300 hover:bg-opacity-50 outline-none;
+  }
+
+  .car-section {
+    @apply w-full h-screen relative snap-always snap-start;
+  }
+
+  .car-img {
+    @apply w-full h-full object-cover;
+  }
+
+  .car-details {
+    @apply absolute top-[22%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-center;
+  }
+
+  .car-buttons {
+    @apply absolute bottom-[2%] left-[50%] translate-x-[-50%] translate-y-[-50%] flex flex-col md:flex-col text-center;
+  }
+
+  .btn {
+    @apply inline-block text-xl text-white bg-gray-700 pt-2 mx-4 font-medium text-center rounded-[10rem] uppercase w-[22rem] h-12 mb-3;
+  }
+
+  .down-arrow {
+    @apply absolute bottom-[0%] left-[50%] translate-x-[-50%] translate-y-[-50%];
+  }
+
+  i {
+    @apply text-3xl;
+  }
+
+  .menu {
+    @apply text-4xl;
+  }
+
+  /* SECTIONS ACTIVE LINK  */
+  .active-link {
+    @apply bg-slate-200;
+  }
+}

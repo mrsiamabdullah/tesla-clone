@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tesla | Automotive company</title>
+    <!-- CSS  -->
+    <link rel="stylesheet" href="CSS/style.css" />
+    <!-- FAVICON  -->
+    <link rel="shortcut icon" href="Images/favicon.png" type="image/x-icon" />
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ICONBOX  -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Mobile Side Navigation  -->
+    <div id="sideNav" class="side-nav">
+      <div class="flex justify-end">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-20 h-12 duration-500 hover:bg-slate-200 rounded-full cursor-pointer"
+          id="closeIcon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      </div>
+      <div class="flex flex-col mt-[10rem]">
+        <a href="#model-S" class="nav-items">Model S</a>
+        <a href="#model-X" class="nav-items">Model X</a>
+        <a href="#model-Y" class="nav-items">Model Y</a>
+        <a href="#model-3" class="nav-items">Model 3</a>
+        <a href="#solar-panels" class="nav-items">Solar Panels</a>
+        <a href="#accessories" class="nav-items">Accessories</a>
+      </div>
+    </div>
+
+    <!-- MAIN  -->
+    <main id="mainDiv">
+      <header class="relative">
+        <!-- Navigation -->
+        <nav
+          class="flex justify-between w-full top-0 z-10 h-28 px-10 items-center bg-white fixed"
+        >
+          <!-- Logo  -->
+          <a href="#">
+            <img
+              src="Images/Tesla,_Inc._-_Logo_(black_script_version).svg"
+              alt=""
+              width="145px"
+            />
+          </a>
+
+          <div class="hidden lg:block nav-menu">
+            <a href="#model-S" class="nav-items active-link mr-3">Model S</a>
+            <a href="#model-X" class="nav-items mr-3">Model X</a>
+            <a href="#model-Y" class="nav-items mr-3">Model Y</a>
+            <a href="#model-3" class="nav-items mr-3">Model 3</a>
+            <a href="#solar-panels" class="nav-items mr-3">Solar Panels</a>
+            <a href="#accessories" class="nav-items">Accessories</a>
+          </div>
+
+          <div class="flex items-center">
+            <a href="#shop" class="nav-items hidden sm:block">Shop</a>
+            <a href="form.html" class="nav-items"><i class="bx bx-user"></i></a>
+            <a href="#" class="nav-items lg:hidden" id="menu"
+              ><i class="bx bx-menu-alt-right menu"></i
+            ></a>
+          </div>
+        </nav>
+      </header>
+
+      <!-- MODEL - S  -->
+      <section id="model-S" class="car-section">
+        <img class="car-img" src="Images/Model-S.avif" alt="model S" />
+        <div class="car-details">
+          <h2 class="text-[4rem] text-slate-800 font-semibold">Model S</h2>
+          <p class="m-3 text-3xl">From $71,090*</p>
+          <p class="text-2xl text-slate-800">
+            Order Online for Touchless Delivery
+          </p>
+        </div>
+
+        <div class="car-buttons">
+          <div>
+            <a href="#" class="btn">Custom Order</a>
+            <a href="#" class="btn bg-slate-100 text-gray-900"
+              >Existing Inventory</a
+            >
+          </div>
+          <div>
+            <p class="mt-5 text-xl">
+              *Price before savings is $74,990, excluding taxes and fees.
+            </p>
+            <p class="underline underline-offset-4 text-xl cursor-pointer mt-3">
+              Learn about est. gas savings.
+            </p>
+          </div>
+        </div>
+
+        <div class="down-arrow">
+          <a href="#model-X">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-10 h-10 animate-bounce"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+          </a>
+        </div>
+      </section>
+
+      <!-- MODEL - X  -->
+      <section id="model-X" class="car-section">
+        <img class="car-img" src="Images/Model-X.avif" alt="model 3" />
+        <div class="car-details">
+          <h2 class="text-[4rem] text-slate-800 font-semibold">Model X</h2>
+          <p class="m-3 text-3xl">From $68,590*</p>
+          <p class="text-2xl text-slate-800">
+            After Federal Tax Credit & Est. Gas Savings
+          </p>
+        </div>
+
+        <div class="car-buttons">
+          <div>
+            <a href="#" class="btn">Custom Order</a>
+            <a href="#" class="btn bg-slate-100 text-gray-900"
+              >Existing Inventory</a
+            >
+          </div>
+          <div>
+            <p class="mt-5 text-xl text-white">
+              *Price before incentives and savings is $79,990, excluding taxes
+              and fees.
+            </p>
+            <p
+              class="underline underline-offset-4 text-xl cursor-pointer mt-3 text-white"
+            >
+              Learn about est. gas savings.
+            </p>
+          </div>
+        </div>
+
+        <div class="down-arrow">
+          <a href="#model-Y">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-10 h-10 animate-bounce"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+          </a>
+        </div>
+      </section>
+
+      <!-- MODEL - Y  -->
+      <section id="model-Y" class="car-section">
+        <img class="car-img" src="Images/Model-Y.avif" alt="model 3" />
+        <div class="car-details">
+          <h2 class="text-[4rem] text-slate-800 font-semibold">Model Y</h2>
+          <p class="m-3 text-3xl">From $36,490*</p>
+          <p class="text-2xl text-slate-800">After Federal Tax Credit</p>
+        </div>
+
+        <div class="car-buttons">
+          <div>
+            <a href="#" class="btn">Custom Order</a>
+            <a href="#" class="btn bg-slate-100 text-gray-900"
+              >Existing Inventory</a
+            >
+          </div>
+          <div>
+            <p class="mt-5 text-xl">
+              *Price before incentives is $43,990, excluding taxes and fees.
+            </p>
+            <p class="underline underline-offset-4 text-xl cursor-pointer mt-3">
+              Learn about est. gas savings.
+            </p>
+          </div>
+        </div>
+
+        <div class="down-arrow">
+          <a href="#model-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-10 h-10 animate-bounce"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+          </a>
+        </div>
+      </section>
+
+      <!-- MODEL - 3  -->
+      <section id="model-3" class="car-section">
+        <img class="car-img" src="Images/Model-3.avif" alt="model 3" />
+        <div class="car-details">
+          <h2 class="text-[4rem] text-slate-800 font-semibold">Model 3</h2>
+          <p class="m-3 text-3xl">Lease starting at $329/mo*</p>
+          <p class="text-2xl text-slate-800">Reengineered</p>
+        </div>
+
+        <div class="car-buttons">
+          <div>
+            <a href="#" class="btn">Custom Order</a>
+            <a href="#" class="btn bg-slate-100 text-gray-900"
+              >Existing Inventory</a
+            >
+          </div>
+          <div>
+            <p class="mt-5 text-xl">
+              *Price before incentives is $43,990, excluding taxes and fees.
+            </p>
+            <p class="underline underline-offset-4 text-xl cursor-pointer mt-3">
+              Learn about est. gas savings.
+            </p>
+          </div>
+        </div>
+
+        <div class="down-arrow">
+          <a href="#solar-panels">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-10 h-10 animate-bounce"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+          </a>
+        </div>
+      </section>
+
+      <!-- Solar Panels  -->
+      <section id="solar-panels" class="car-section">
+        <img class="car-img" src="Images/Solar Panels.avif" alt="model 3" />
+        <div class="car-details">
+          <h2 class="text-[4rem] font-semibold text-white">Solar Panels</h2>
+          <p class="text-2xl text-white">Schedule a Virtual Consultation</p>
+        </div>
+
+        <div class="car-buttons text-white">
+          <div>
+            <a href="#" class="btn">Custom Order</a>
+            <a href="#" class="btn bg-slate-100 text-gray-900"
+              >Existing Inventory</a
+            >
+          </div>
+          <div>
+            <p class="mt-5 text-xl">
+              *Price before incentives is $9,990, excluding taxes and fees.
+            </p>
+            <p class="underline underline-offset-4 text-xl cursor-pointer mt-3">
+              Learn about Solar Panels.
+            </p>
+          </div>
+        </div>
+
+        <div class="down-arrow text-white">
+          <a href="#accessories">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-10 h-10 animate-bounce"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+          </a>
+        </div>
+      </section>
+
+      <section id="accessories" class="car-section">
+        <img class="car-img" src="Images/Accessories.avif" alt="model 3" />
+        <div class="car-details">
+          <h2 class="text-[4rem] text-slate-800 font-semibold">Accessories</h2>
+          <p class="text-2xl text-slate-800">Schedule a Virtual Consultation</p>
+        </div>
+
+        <footer
+          class="absolute bottom-[1%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-center text-gray-300 md:flex justify-between text-lg"
+        >
+          <a
+            href="#tesla"
+            class="hover:underline underline-offset-4 text-white mr-6"
+            >Tesla &#169; 2024</a
+          >
+          <a
+            href="#privacy-&-legal"
+            class="hover:underline underline-offset-4 text-white mr-6"
+            >Privacy & Legal</a
+          >
+          <a
+            href="#updates"
+            class="hover:underline underline-offset-4 text-white mr-6"
+            >Updates</a
+          >
+          <a
+            href="#contact"
+            class="hover:underline underline-offset-4 text-white"
+            >Contact</a
+          >
+        </footer>
+      </section>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>

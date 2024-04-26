@@ -3,11 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://github.com/mrsiamabdullah/tesla-clone/",
   "scripts": {
-    "start": "vite",
-    "predeploy": "yarn run build",
-    "deploy": "gh-pages -d build"
+    "start": "vite"
   },
   "keywords": [],
   "author": "",

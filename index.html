@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
     <!-- ICONBOX  -->
@@ -51,47 +51,52 @@
       </div>
     </div>
 
-    <!-- MAIN  -->
+    <header class="relative">
+      <!-- Navigation -->
+      <nav
+        class="flex justify-between w-full top-0 z-10 h-28 px-10 items-center bg-white fixed"
+      >
+        <!-- Logo  -->
+        <a href="#">
+          <img
+            src="Images/Tesla,_Inc._-_Logo_(black_script_version).svg"
+            alt=""
+            width="145px"
+          />
+        </a>
+
+        <div class="hidden lg:block nav-menu">
+          <a href="#model-S" class="nav-items mr-3 active-link">Model S</a>
+          <a href="#model-X" class="nav-items mr-3">Model X</a>
+          <a href="#model-Y" class="nav-items mr-3">Model Y</a>
+          <a href="#model-3" class="nav-items mr-3">Model 3</a>
+          <a href="#solar-panels" class="nav-items mr-3">Solar Panels</a>
+          <a href="#accessories" class="nav-items">Accessories</a>
+        </div>
+
+        <div class="flex items-center">
+          <a href="#shop" class="nav-items hidden sm:block">Shop</a>
+          <a href="form.html" class="nav-items"><i class="bx bx-user"></i></a>
+          <a href="#" class="nav-items lg:hidden" id="menu"
+            ><i class="bx bx-menu-alt-right menu"></i
+          ></a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main  -->
     <main id="mainDiv">
-      <header class="relative">
-        <!-- Navigation -->
-        <nav
-          class="flex justify-between w-full top-0 z-10 h-28 px-10 items-center bg-white fixed"
-        >
-          <!-- Logo  -->
-          <a href="#">
-            <img
-              src="Images/Tesla,_Inc._-_Logo_(black_script_version).svg"
-              alt=""
-              width="145px"
-            />
-          </a>
-
-          <div class="hidden lg:block nav-menu">
-            <a href="#model-S" class="nav-items active-link mr-3">Model S</a>
-            <a href="#model-X" class="nav-items mr-3">Model X</a>
-            <a href="#model-Y" class="nav-items mr-3">Model Y</a>
-            <a href="#model-3" class="nav-items mr-3">Model 3</a>
-            <a href="#solar-panels" class="nav-items mr-3">Solar Panels</a>
-            <a href="#accessories" class="nav-items">Accessories</a>
-          </div>
-
-          <div class="flex items-center">
-            <a href="#shop" class="nav-items hidden sm:block">Shop</a>
-            <a href="form.html" class="nav-items"><i class="bx bx-user"></i></a>
-            <a href="#" class="nav-items lg:hidden" id="menu"
-              ><i class="bx bx-menu-alt-right menu"></i
-            ></a>
-          </div>
-        </nav>
-      </header>
-
       <!-- MODEL - S  -->
       <section id="model-S" class="car-section">
+        <img
+          class="car-img sm:hidden"
+          src="Images/Homepage-Model-S-Mobile-LHD-6.22.avif"
+          alt="model S"
+        />
         <img class="car-img" src="Images/Model-S.avif" alt="model S" />
         <div class="car-details">
           <h2 class="text-[4rem] text-slate-800 font-semibold">Model S</h2>
-          <p class="m-3 text-3xl">From $71,090*</p>
+          <p class="m-3 text-3xl font-semibold text-slate-800">From $71,090*</p>
           <p class="text-2xl text-slate-800">
             Order Online for Touchless Delivery
           </p>
@@ -136,10 +141,15 @@
 
       <!-- MODEL - X  -->
       <section id="model-X" class="car-section">
+        <img
+          class="car-img sm:hidden"
+          src="Images/Homepage-Model-X-Mobile-LHD_001.avif"
+          alt="model 3"
+        />
         <img class="car-img" src="Images/Model-X.avif" alt="model 3" />
         <div class="car-details">
           <h2 class="text-[4rem] text-slate-800 font-semibold">Model X</h2>
-          <p class="m-3 text-3xl">From $68,590*</p>
+          <p class="m-3 text-3xl font-semibold text-slate-800">From $68,590*</p>
           <p class="text-2xl text-slate-800">
             After Federal Tax Credit & Est. Gas Savings
           </p>
@@ -187,11 +197,18 @@
 
       <!-- MODEL - Y  -->
       <section id="model-Y" class="car-section">
+        <img
+          class="car-img sm:hidden"
+          src="Images/Homepage-Model-Y-Mobile-Global.avif"
+          alt="model 3"
+        />
         <img class="car-img" src="Images/Model-Y.avif" alt="model 3" />
         <div class="car-details">
           <h2 class="text-[4rem] text-slate-800 font-semibold">Model Y</h2>
-          <p class="m-3 text-3xl">From $36,490*</p>
-          <p class="text-2xl text-slate-800">After Federal Tax Credit</p>
+          <p class="m-3 text-3xl font-semibold text-slate-800">From $36,490*</p>
+          <p class="text-2xl text-slate-800 hidden sm:block">
+            After Federal Tax Credit
+          </p>
         </div>
 
         <div class="car-buttons">
@@ -233,10 +250,17 @@
 
       <!-- MODEL - 3  -->
       <section id="model-3" class="car-section">
+        <img
+          class="car-img sm:hidden"
+          src="Images/Homepage-Model-3-Mobile-LHD-v2.avif"
+          alt="model 3"
+        />
         <img class="car-img" src="Images/Model-3.avif" alt="model 3" />
         <div class="car-details">
           <h2 class="text-[4rem] text-slate-800 font-semibold">Model 3</h2>
-          <p class="m-3 text-3xl">Lease starting at $329/mo*</p>
+          <p class="m-3 text-3xl font-semibold text-slate-800">
+            Starting at $329/mo*
+          </p>
           <p class="text-2xl text-slate-800">Reengineered</p>
         </div>
 
@@ -247,7 +271,7 @@
               >Existing Inventory</a
             >
           </div>
-          <div>
+          <div class="text-white">
             <p class="mt-5 text-xl">
               *Price before incentives is $43,990, excluding taxes and fees.
             </p>
@@ -279,10 +303,21 @@
 
       <!-- Solar Panels  -->
       <section id="solar-panels" class="car-section">
+        <img
+          class="car-img sm:hidden"
+          src="Images/Homepage-SolarPanels-01-Mobile.avif"
+          alt="model 3"
+        />
         <img class="car-img" src="Images/Solar Panels.avif" alt="model 3" />
         <div class="car-details">
-          <h2 class="text-[4rem] font-semibold text-white">Solar Panels</h2>
-          <p class="text-2xl text-white">Schedule a Virtual Consultation</p>
+          <h2 class="text-[3.5rem] font-semibold text-white sm:text-[4rem]">
+            Solar Panels
+          </h2>
+          <p
+            class="text-2xl text-white underline underline-offset-4 cursor-pointer"
+          >
+            Schedule a Virtual Consultation
+          </p>
         </div>
 
         <div class="car-buttons text-white">
@@ -326,7 +361,11 @@
         <img class="car-img" src="Images/Accessories.avif" alt="model 3" />
         <div class="car-details">
           <h2 class="text-[4rem] text-slate-800 font-semibold">Accessories</h2>
-          <p class="text-2xl text-slate-800">Schedule a Virtual Consultation</p>
+          <p
+            class="text-2xl text-slate-800 underline underline-offset-4 cursor-pointer"
+          >
+            Schedule a Virtual Consultation
+          </p>
         </div>
 
         <footer
@@ -335,7 +374,7 @@
           <a
             href="#tesla"
             class="hover:underline underline-offset-4 text-white mr-6"
-            >Tesla &#169; 2024</a
+            >&#169; Tesla 2024</a
           >
           <a
             href="#privacy-&-legal"
